@@ -1,0 +1,5 @@
+.myfooter {
+    grid-area: myfooter;
+    background-color: saddlebrown;
+    text-align: center;
+}

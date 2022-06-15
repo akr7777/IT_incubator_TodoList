@@ -1,0 +1,28 @@
+
+.tasks {
+    /*text-align: center;*/
+    /*background-color: red;*/
+    margin: 10px;
+    /*padding: 10px;*/
+}
+
+.elements_conjuction {
+    height: 300px;
+    width: 400px;
+    border: solid;
+    border-width: medium;
+    border-color: saddlebrown;
+    background-color: #91aede;
+    margin: 5px;
+    padding: 5px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.ul_center {
+    text-align: center;
+    list-style: none;
+    display: inline;
+
+}

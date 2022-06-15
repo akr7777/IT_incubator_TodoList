@@ -1,0 +1,15 @@
+.mytodolist {
+    grid-area: todo;
+    background-color: silver;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.list_wrapper {
+    background-color: silver;
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+.myheader {
+    /*width: 100%;*/
+    grid-area: myheader;
+    background-color: grey;
+    text-align: center;
+}
