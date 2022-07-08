@@ -37,7 +37,15 @@ function App() {
         {id: v1(), taskText: "React", isDone: false}
     ]);
     let [filter, setFilter] = useState<FilterValuesType>("all");
-    
+
+    function changeTaskStatus (taskID: string, isDone: boolean) {
+        let task = tasks.find(t => t.id === taskID);
+        if (task) {
+            task.isDone = isDone;
+        }
+        setTasks([...tasks])
+
+    }
     function removeTask (id: string) {
         let filteredTasks = tasks.filter( t => t.id !== id);
         setTasks(filteredTasks);
@@ -70,6 +78,8 @@ function App() {
                       removeTask={removeTask}
                       changeFilter = {changeFilter}
                       addTask = {addTask}
+                      changeTaskStatus = {changeTaskStatus}
+                      filter = {filter}
             />
             <Footer/>
         </div>
